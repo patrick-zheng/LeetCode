@@ -42,8 +42,7 @@ class Solution:
                 complement = target - num
                 if complement in numIdxMap:
                     return [numIdxMap[complement], i]
-                if num not in numIdxMap:
-                    numIdxMap[num] = i
+                numIdxMap[num] = i
 
             return []
 
