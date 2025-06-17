@@ -5,7 +5,6 @@ Time Complexity: Brute Force O(n^2), Sorted Array with Two Pointers O(n log n), 
 Space Complexity: O(n)
 """
 
-from __future__ import annotations
 from typing import Callable
 
 class Solution:
