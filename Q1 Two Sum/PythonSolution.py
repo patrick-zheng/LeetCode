@@ -5,7 +5,7 @@ Time Complexity: Brute Force O(n^2), Sorted Array with Two Pointers O(n log n), 
 Space Complexity: O(n)
 """
 
-from typing import Callable
+from collections.abc import Callable
 
 class Solution:
     class TwoSum:
