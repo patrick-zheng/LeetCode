@@ -15,6 +15,7 @@ class Solution:
                 for j in range(i + 1, len(nums)):
                     if (nums[i] + nums[j]) == target:
                         return [i, j]
+            return []
 
         @staticmethod
         def sortedArrayTwoPointers(nums: list[int], target: int) -> list[int]:
@@ -24,27 +25,27 @@ class Solution:
             leftIdx = 0
             rightIdx = len(sortedMap) - 1
 
-            while True:
-                leftNum = sortedMap[leftIdx][1]
-                rightNum = sortedMap[rightIdx][1]
-                trySum = leftNum + rightNum
-
+            while leftIdx < rightIdx:
+                trySum = sortedMap[leftIdx][1] + sortedMap[rightIdx][1]
                 if trySum == target:
                     return [sortedMap[leftIdx][0], sortedMap[rightIdx][0]]
-                elif trySum > target:
-                    rightIdx -= 1
-                else:
-                    leftIdx += 1
+                elif trySum > target: rightIdx -= 1
+                else: leftIdx += 1
+
+            return []
 
         @staticmethod
         def hashMapLookup(nums: list[int], target: int) -> list[int]:
             numIdxMap = {}
+
             for i, num in enumerate(nums):
                 complement = target - num
                 if complement in numIdxMap:
                     return [numIdxMap[complement], i]
-                if num not in numIdxMap:  # space-saving version
+                if num not in numIdxMap:
                     numIdxMap[num] = i
+
+            return []
 
     @staticmethod
     def solve(nums: list[int], target: int, method: str = "hashMapLookup") -> list[int]:
