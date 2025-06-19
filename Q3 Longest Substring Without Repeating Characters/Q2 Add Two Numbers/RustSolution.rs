@@ -1,10 +1,3 @@
-/*
- * Problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
- * Solution: https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- */
-
 pub struct Solution;
 impl Solution {
   pub fn length_of_longest_substring(s: String) -> i32 {

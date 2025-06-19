@@ -1,10 +1,3 @@
-"""
-Problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-Solution: https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/
-Time Complexity: O(n)
-Space Complexity: O(n)
-"""
-
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         char_index_map = {}
@@ -18,4 +11,3 @@ class Solution:
             max_length = max(max_length, right - left + 1)
 
         return max_length
-

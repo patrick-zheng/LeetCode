@@ -1,13 +1,6 @@
 #include <unordered_map>
 #include <string>
 
-/*
- * Problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
- * Solution: https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- */
-
 using namespace std;
 
 class Solution {

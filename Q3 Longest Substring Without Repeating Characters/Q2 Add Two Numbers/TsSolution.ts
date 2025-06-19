@@ -1,10 +1,3 @@
-/*
- * Problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
- * Solution: https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- */
-
 function lengthOfLongestSubstring(s: string): number {
     const charMap = new Map<string, number>();
     let left = 0;
