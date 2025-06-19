@@ -1,16 +1,3 @@
-#include <vector>
-#include <unordered_map>
-#include <algorithm>
-#include <string>
-#include <stdexcept>
-
-/*
- * Problem: https://leetcode.com/problems/add-two-numbers/
- * Solution: https://leetcode.com/problems/add-two-numbers/solutions/
- * Time Complexity: O(max(n, m))
- * Space Complexity: O(max(n, m))
- */
-
 // Definition for singly-linked list.
 struct ListNode {
     int val;
