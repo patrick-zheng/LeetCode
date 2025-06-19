@@ -1,6 +1,6 @@
 /*
  * Problem: https://leetcode.com/problems/add-two-numbers/
- * Solution: https://leetcode.com/problems/add-two-numbers/solutions/2958/two-sum/
+ * Solution: https://leetcode.com/problems/add-two-numbers/solutions/
  * Time Complexity: O(max(n, m))
  * Space Complexity: O(max(n, m))
  */
@@ -17,7 +17,7 @@ class ListNode {
 }
 
 
-class Solution {
+export class Solution {
     addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
         const answer: ListNode = new ListNode(0);
         let current = answer;

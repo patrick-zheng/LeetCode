@@ -6,7 +6,7 @@
 
 /*
  * Problem: https://leetcode.com/problems/add-two-numbers/
- * Solution: https://leetcode.com/problems/add-two-numbers/solutions/2958/two-sum/
+ * Solution: https://leetcode.com/problems/add-two-numbers/solutions/
  * Time Complexity: O(max(n, m))
  * Space Complexity: O(max(n, m))
  */
