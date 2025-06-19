@@ -1,10 +1,3 @@
-/*
- * Problem: https://leetcode.com/problems/two-sum/
- * Solution: https://leetcode.com/problems/two-sum/solutions/
- * Time Complexity: Brute Force O(n^2), Sorted Array with Two Pointers O(n log n), Hash Map Lookup O(n)
- * Space Complexity: O(n)
- */
-
 type TwoSumMethod = (nums: number[], target: number) => number[];
 
 export class Solution {
