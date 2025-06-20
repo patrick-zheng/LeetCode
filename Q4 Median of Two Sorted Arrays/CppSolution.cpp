@@ -1,24 +1,41 @@
-#include <unordered_map>
-#include <string>
+#include <vector>
+#include <algorithm>
+#include <stdexcept>
 
 using namespace std;
 
 class Solution {
 public:
-    int lengthOfLongestSubstring(string s) {
-        unordered_map<char, int> charMap;
-        int left = 0;
-        int maxLength = 0;
+  double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+    if (nums1.size() > nums2.size())
+      return findMedianSortedArrays(nums2, nums1);
 
-        for (int right = 0; right < s.length(); right++) {
-            const char currentChar = s[right];
-            if (charMap.find(currentChar) != charMap.end()) {
-                left = max(left, charMap[currentChar] + 1);
-            }
-            charMap[currentChar] = right;
-            maxLength = max(maxLength, right - left + 1);
+    int m = nums1.size();
+    int n = nums2.size();
+    int left = 0, right = m;
+
+    while (left <= right) {
+      int partitionA = (left + right) / 2;
+      int partitionB = (m + n + 1) / 2 - partitionA;
+
+      int maxLeftA = (partitionA == 0) ? INT_MIN : nums1[partitionA - 1];
+      int minRightA = (partitionA == m) ? INT_MAX : nums1[partitionA];
+      int maxLeftB = (partitionB == 0) ? INT_MIN : nums2[partitionB - 1];
+      int minRightB = (partitionB == n) ? INT_MAX : nums2[partitionB];
+
+      if (maxLeftA <= minRightB && maxLeftB <= minRightA) {
+        if ((m + n) % 2 == 0) {
+          return (max(maxLeftA, maxLeftB) + min(minRightA, minRightB)) / 2.0;
+        } else {
+          return static_cast<double>(max(maxLeftA, maxLeftB));
         }
-
-        return maxLength;
+      } else if (maxLeftA > minRightB) {
+        right = partitionA - 1;
+      } else {
+        left = partitionA + 1;
+      }
     }
+
+    throw invalid_argument("Input arrays are not sorted or have invalid lengths.");
+  }
 };

@@ -19,3 +19,4 @@ class Solution:
                 else: return max(maxLeftA, maxLeftB)
             elif maxLeftA > minRightB: right = partitionA - 1
             else: left = partitionA + 1
+        raise ValueError("Input arrays are not sorted or have invalid lengths.")
