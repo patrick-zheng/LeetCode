@@ -12,7 +12,8 @@ This problem is solved using a **binary search** approach to partition the two s
 - The left half contains the same number of elements as the right half (or one more if the total number of elements is odd).
 - Every element in the left half is less than or equal to every element in the right half.
 
-### Steps:
+### Steps
+
 - Always perform binary search on the **shorter array** (`nums1`) for efficiency.
 - At each step, partition `nums1` at index `partitionA`, and compute the corresponding partition `partitionB` in `nums2`.
 - Check if the max of the left partitions (`maxLeftA`, `maxLeftB`) is less than or equal to the min of the right partitions (`minRightA`, `minRightB`).
