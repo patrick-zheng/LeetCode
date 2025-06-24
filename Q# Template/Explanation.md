@@ -1,40 +1,29 @@
-# 🧩 LeetCode Problem: Reverse Integer
+# 🧩 LeetCode Problem: Problem Name
 
-- **Problem Link**: [Reverse Integer – LeetCode](https://https://leetcode.com/problems/reverse-integer/)
-- **Solution Link**: [Official Solutions](https://https://leetcode.com/problems/reverse-integer/solutions/)
+- **Problem Link**: [ZProblem Name – LeetCode](https://leetcode.com/problems/problem-name/)
+- **Solution Link**: [Official Solutions](https://leetcode.com/problems/problem-name/solutions/)
 
 ---
 
 ## 🧠 Algorithm Explanation
 
-This problem is solved using a **simulation-based traversal** that builds each row of the zigzag pattern line by line.
-
-### Why This Approach?
-
-- Instead of simulating the full 2D zigzag pattern, we can directly append characters to the corresponding row strings.
-- We track the **current row** and **direction of movement** to assign each character appropriately.
-- This yields an **O(n)** solution in both time and space.
+Algorithm explanation and reason why this algorithm was used.
 
 ---
 
 ### 🪜 Steps
 
-1. **Handle Edge Case**:
-   If `numRows` is 1 or the input string is shorter than `numRows`, return the original string (no zigzag needed).
+1. **Step 1**:
 
-2. **Initialize Rows**:
-   Create a list of strings (`rows`) where each string will collect characters for a specific row.
+2. **Step 2**:
 
-3. **Simulate the Zigzag Pattern**:
-   - Use a pointer `curr_row` to track the current row index.
-   - Use a flag `going_down` to change direction when the top or bottom is reached.
-   - Iterate over each character in the input string:
-     - Append the character to the current row.
-     - Change direction if the current row is the first or last row.
-     - Move `curr_row` up or down accordingly.
+3. **SStep 3**:
 
-4. **Concatenate Rows**:
-   Combine all row strings into a single result string by joining them.
+---
+
+## Constraints
+
+- Constraint
 
 ---
 
@@ -42,10 +31,7 @@ This problem is solved using a **simulation-based traversal** that builds each r
 
 | Metric            | Complexity |
 |-------------------|------------|
-| Time Complexity   | O(n)       |
-| Space Complexity  | O(n)       |
-
-- `n = len(s)`
-- Each character is visited once and stored once.
+| Time Complexity   | O()       |
+| Space Complexity  | O()       |
 
 ---
