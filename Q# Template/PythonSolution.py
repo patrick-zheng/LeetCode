@@ -1,3 +1,3 @@
 class Solution:
-	def functionName(self) -> None:
-		pass
+    def functionName(self) -> None:
+        pass

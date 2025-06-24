@@ -26,7 +26,7 @@ This approach was chosen for its linear runtime and direct, readable logic that 
 
 ## Constraints
 
-- 0 <= s.length <= 200
+- `0 <= s.length <= 200`
 - s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'
 
 ---
