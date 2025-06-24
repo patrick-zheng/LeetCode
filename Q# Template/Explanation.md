@@ -21,7 +21,7 @@ Algorithm explanation and reason why this algorithm was used.
 
 ---
 
-## Constraints
+## ✅ Constraints
 
 - Constraint
 
