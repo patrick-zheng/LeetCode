@@ -12,6 +12,7 @@ The algorithm uses bit manipulation (shifts) and subtraction to find how many ti
 We keep doubling the divisor (via left shift) to find the largest multiple at each step, which reduces the number of operations from linear to logarithmic.
 
 This approach is optimal because:
+
 - Instead of subtracting `divisor` one at a time (`O(N)`), it subtracts the largest possible multiples (`O(log N)`).
 - Works for negative numbers by normalizing the sign and restoring it at the end.
 - Handles edge cases like overflow properly.
