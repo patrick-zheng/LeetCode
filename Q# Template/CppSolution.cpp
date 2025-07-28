@@ -8,5 +8,4 @@ public:
     void functionName() {
 
     }
-
 };
