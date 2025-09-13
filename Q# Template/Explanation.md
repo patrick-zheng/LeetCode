@@ -1,6 +1,6 @@
 # 🧩 LeetCode Problem: Problem Name
 
-- **Problem Link**: [ZProblem Name – LeetCode](https://leetcode.com/problems/problem-name/)
+- **Problem Link**: [Problem Name – LeetCode](https://leetcode.com/problems/problem-name/)
 - **Solution Link**: [Official Solutions](https://leetcode.com/problems/problem-name/solutions/)
 
 ---
