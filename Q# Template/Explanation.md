@@ -31,7 +31,7 @@ Algorithm explanation and reason why this algorithm was used.
 
 | Metric            | Complexity |
 |-------------------|------------|
-| Time Complexity   | O()       |
-| Space Complexity  | O()       |
+| Time Complexity   | O()        |
+| Space Complexity  | O()        |
 
 ---
