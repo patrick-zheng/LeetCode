@@ -1,0 +1,21 @@
+---
+description: Follow PREP_AND_MARKDOWN.md for LeetCode folders and explanations
+alwaysApply: true
+---
+
+# LeetCode prep and markdown
+
+For **any** work in this repo that adds or changes LeetCode problem material
+(new `Q*` folders, `PythonSolution.py`, `CppSolution.cpp`, `RustSolution.rs`,
+`Explanation.md`, or related commits), **read and follow** the full guide at
+repository root:
+
+**`PREP_AND_MARKDOWN.md`**
+
+That file defines: folder naming, required files, how to structure
+`Explanation.md`, markdownlint checks (MD060 tables, MD052 index notation,
+MD013), complexity table copying from Q220, and commit message style
+(`completed Q###`, optional `Made-with: Cursor`).
+
+Do not rely on memory alone for those details; align with
+`PREP_AND_MARKDOWN.md`.
