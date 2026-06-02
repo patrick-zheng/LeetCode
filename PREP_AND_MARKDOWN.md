@@ -34,7 +34,7 @@ Mirror **Q220** / **Q221**:
 - Title: `# LeetCode Problem: {Title}`
 - **Problem Link** and **Solution Link** (problem URL + `/solutions/`).
 - `---` between major sections.
-- **`## Algorithm`** — idea, steps, formulas (`\[ ... \]` when helpful).
+- **`## Algorithm`** — idea, steps, formulas (`$$ ... $$` display math when helpful).
 - **`## Constraints`** — bullets from the statement.
 - **`## Complexity`** — two-column table (see section 3 for lint rules).
 
@@ -69,7 +69,10 @@ CommonMark treats **`[text][label]`** as a reference link. Index chains like
 **Safer patterns:**
 
 - In **LaTeX**, use subscripts: `dp_{i,j}`, `dp_{i-1,j}`, not `dp[i][j]`
-  inside `\[ … \]` or `\( … \)`.
+  inside `$$ … $$` or `$ … $`.
+- Prefer **`$$ ... $$`** (display) and **`$ ... $`** (inline) over `\[ … \]` /
+  `\( … \)` — GitHub and most Markdown previews render dollar delimiters, not
+  LaTeX bracket delimiters.
 - In **inline code**, use comma indices: `` `dp[i, j]` ``,
   `` `matrix[i, j]` ``, or keep indices in math only.
 
